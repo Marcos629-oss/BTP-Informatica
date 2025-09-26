@@ -202,7 +202,6 @@ nav ul li a.active {
   margin-top: 10px;
 }
 
-/* 🎮 Juego de memoria */
 .juego {
   text-align: center;
   margin: 3rem 0;
@@ -215,8 +214,8 @@ nav ul li a.active {
 .juego h2,
 .juego p {
   margin-bottom: 1rem;
-  text-align: center;
 }
+
 
 .game-board {
   display: grid;
@@ -230,14 +229,14 @@ nav ul li a.active {
 }
 
 .card-game {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1; 
   background: var(--color-secundario, #3b82f6);
   border-radius: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.5rem, 5vw, 2.5rem); 
+  font-size: clamp(1.2rem, 4vw, 2.5rem); 
   color: white;
   font-weight: bold;
   transition: transform 0.3s, background 0.3s;
@@ -247,6 +246,31 @@ nav ul li a.active {
   background: var(--color-acento, #f59e0b);
   transform: rotateY(180deg);
 }
+
+@media (max-width: 600px) {
+  .game-board {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .card-game {
+    font-size: clamp(1rem, 6vw, 2rem);
+  }
+}
+
+@media (max-width: 400px) {
+  .game-board {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px;
+  }
+
+  .card-game {
+    font-size: clamp(0.9rem, 7vw, 1.5rem);
+  }
+}
+
 
 
 .formulario {
@@ -447,3 +471,4 @@ video {
   }
 
 }
+
