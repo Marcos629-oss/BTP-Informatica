@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contáctanos para más información sobre el Área de Informática.">
+  <meta name="keywords" content="contacto, informática, instituto educativo, tecnología">
+  <meta name="author" content="Área de Informática">
+  <title>Contacto - Área de Informática</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegación principal">
+      <div class="logo">
+        <img src="Logo_Area.jpeg" alt="Logo Área de Informática">
+        <span>Área de Informática</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Contacto</h1>
+      <p>Estamos aquí para atenderte. Escríbenos o visítanos en nuestro instituto.</p>
+    </section>
+
+    <section class="contenido">
+      <h2>Envíanos un Mensaje</h2>
+      <form class="formulario" id="contact-form" onsubmit="handleSubmit(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required aria-required="true">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="form-message" class="form-message" style="display: none;"></div>
+    </section>
+    <section class="mapa">
+  <h2>Encuéntranos</h2>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4958.688844527799!2d-88.78361431205042!3d14.774671079002161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2shn!4v1758810969886!5m2!1ses-419!2shn" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <p>Nos encontramos en el centro de la ciudad, accesibles para toda la comunidad estudiantil.</p>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h3>Área de Informática</h3>
+        <p>CEMG "Álvaro Contreras"</p>
+        <p>Comprometidos con la excelencia académica y el desarrollo tecnológico.</p>
+      </div>
+      <div>
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="clases.html">Clases</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+  <h3>Contacto</h3>
+  <p>Email: <a href="mailto:informatica@instituto.edu">informatica@instituto.edu</a></p>
+  <p>Tel: <a href="tel:+50422220000">+504 2222-0000</a></p>
+  <p>Dirección: Santa Rosa de Copán, Honduras</p>
+  <p>
+    Facebook: 
+    <a href="https://www.facebook.com/people/Idac-Alvaro-Contreras/100037191416017/" target="_blank" rel="noopener noreferrer">
+      Síguenos
+    </a>
+  </p>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Área de Informática - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
