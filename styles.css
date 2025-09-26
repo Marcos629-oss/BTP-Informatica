@@ -214,6 +214,7 @@ nav ul li a.active {
 .juego h2,
 .juego p {
   margin-bottom: 1rem;
+  text-align:center;
 }
 
 
@@ -471,4 +472,5 @@ video {
   }
 
 }
+
 
